@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -10,7 +12,7 @@
 | to using a Closure or controller method. Build something great!
 |
 */
-Route::get('/', function () {
+Route::get('/', static function () {
     return redirect()->route('auth.login');
 })->name('home');
 

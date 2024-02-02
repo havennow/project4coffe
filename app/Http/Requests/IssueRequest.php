@@ -1,9 +1,9 @@
 <?php
 
-namespace GitScrum\Http\Requests;
+namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
-use GitScrum\Models\Sprint;
+use App\Models\Sprint;
 
 class IssueRequest extends FormRequest
 {

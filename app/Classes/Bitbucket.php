@@ -1,15 +1,15 @@
 <?php
 
-namespace GitScrum\Classes;
+namespace App\Classes;
 
 use Auth;
 use Carbon\Carbon;
-use GitScrum\Models\User;
-use GitScrum\Models\Issue;
-use GitScrum\Models\Organization;
-use GitScrum\Models\ProductBacklog;
-use GitScrum\Models\Branch;
-use GitScrum\Contracts\ProviderInterface;
+use App\Models\User;
+use App\Models\Issue;
+use App\Models\Organization;
+use App\Models\ProductBacklog;
+use App\Models\Branch;
+use App\Contracts\ProviderInterface;
 use GuzzleHttp\Client as GuzzleClient;
 
 class Bitbucket implements ProviderInterface

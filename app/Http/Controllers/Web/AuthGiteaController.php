@@ -1,10 +1,10 @@
 <?php
 
-namespace GitScrum\Http\Controllers\Web;
+namespace App\Http\Controllers\Web;
 
-use GitScrum\Http\Requests\AuthRequest;
-use GitScrum\Models\User;
-use GitScrum\Classes\Gitea;
+use App\Http\Requests\AuthRequest;
+use App\Models\User;
+use App\Classes\Gitea;
 use Socialite;
 use Auth;
 use SocialiteProviders\Manager\Exception\InvalidArgumentException;

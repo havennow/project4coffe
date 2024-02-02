@@ -1,11 +1,11 @@
 <?php
 
-namespace GitScrum\Http\Controllers\Web;
+namespace App\Http\Controllers\Web;
 
 use Auth;
-use GitScrum\Contracts\SlackInterface as Slack;
-use GitScrum\Models\Issue;
-use GitScrum\Models\User;
+use App\Contracts\SlackInterface as Slack;
+use App\Models\Issue;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class UserIssueController extends Controller

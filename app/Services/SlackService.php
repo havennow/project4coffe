@@ -1,8 +1,8 @@
 <?php
 
-namespace GitScrum\Services;
+namespace App\Services;
 
-use GitScrum\Contracts\SlackInterface;
+use App\Contracts\SlackInterface;
 use Log;
 use Maknz\Slack\Client;
 
@@ -65,7 +65,7 @@ class SlackService implements SlackInterface
         switch ($type) {
             case 1:
                 $usersAssigned = [];
-                
+
                 foreach ($content['assigned_to'] as $username) {
                     if (! empty($username)) {
                         $usersAssigned[] = "@{$username}";

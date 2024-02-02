@@ -1,11 +1,11 @@
 <?php
 
-namespace GitScrum\Http\Controllers\Web;
+namespace App\Http\Controllers\Web;
 
-use GitScrum\Http\Requests\SprintRequest;
-use GitScrum\Models\ConfigStatus;
-use GitScrum\Models\ProductBacklog;
-use GitScrum\Models\Sprint;
+use App\Http\Requests\SprintRequest;
+use App\Models\ConfigStatus;
+use App\Models\ProductBacklog;
+use App\Models\Sprint;
 use Auth;
 use Illuminate\Http\Request;
 
@@ -57,7 +57,7 @@ class SprintController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param GitScrum\Http\Requests\SprintRequest $request
+     * @param App\Http\Requests\SprintRequest $request
      *
      * @return \Illuminate\Http\Response
      */

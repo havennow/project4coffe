@@ -1,33 +1,33 @@
 <?php
 
-namespace GitScrum\Providers;
+namespace App\Providers;
 
-use Illuminate\Support\ServiceProvider;
 use Illuminate\Database\Eloquent\Relations\Relation;
-use GitScrum\Classes\Github;
-use GitScrum\Classes\Gitlab;
-use GitScrum\Classes\Bitbucket;
-use GitScrum\Classes\Gitea;
+use Illuminate\Support\ServiceProvider;
+use App\Classes\Github;
+use App\Classes\Gitlab;
+use App\Classes\Bitbucket;
+use App\Classes\Gitea;
 use Config;
 
 class AppServiceProvider extends ServiceProvider
 {
     /**
-     * Bootstrap any application services.
+     * Register any application services.
      */
-    public function boot()
+    public function register(): void
     {
         Relation::morphMap(Config::get('database.relation'));
     }
 
     /**
-     * Register any application services.
+     * Bootstrap any application services.
      */
-    public function register()
+    public function boot(): void
     {
         foreach (Config::get('app.services') as $service) {
             $this->app->singleton($service, function () use ($service) {
-                $namespace = 'GitScrum\\Services\\' . $service;
+                $namespace = 'App\\Services\\' . $service;
                 return new $namespace();
             });
         }

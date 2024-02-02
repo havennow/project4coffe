@@ -1,12 +1,12 @@
 <?php
 
-namespace GitScrum\Models;
+namespace App\Models;
 
-use GitScrum\Presenters\CommitFilePresenter;
+use App\Presenters\CommitFilePresenter;
 use Illuminate\Database\Eloquent\Model;
-use GitScrum\Scopes\CommitFileScope;
-use GitScrum\Scopes\GlobalScope;
-use GitScrum\Presenters\GlobalPresenter;
+use App\Scopes\CommitFileScope;
+use App\Scopes\GlobalScope;
+use App\Presenters\GlobalPresenter;
 
 class CommitFile extends Model
 {

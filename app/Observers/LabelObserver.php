@@ -1,10 +1,10 @@
 <?php
 
-namespace GitScrum\Observers;
+namespace App\Observers;
 
-use GitScrum\Models\Label;
-use GitScrum\Models\Status;
-use GitScrum\Classes\Helper;
+use App\Models\Label;
+use App\Models\Status;
+use App\Classes\Helper;
 use Auth;
 
 class LabelObserver

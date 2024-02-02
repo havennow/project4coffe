@@ -1,6 +1,6 @@
 <?php
 
-namespace GitScrum\Http\Middleware;
+namespace App\Http\Middleware;
 
 use Closure;
 use Auth;
@@ -18,7 +18,7 @@ class UserAuthenticated
     public function handle($request, Closure $next)
     {
         if (!Auth::user()) {
-            return redirect()->route('auth.login')->with('success', trans('gitscrum.GitScrum-authentication-is-required'));
+            return redirect()->route('auth.login')->with('success', trans('gitscrum.App-authentication-is-required'));
         }
 
         return $next($request);

@@ -1,6 +1,6 @@
 <?php
 
-namespace GitScrum\Http\Controllers\Web;
+namespace App\Http\Controllers\Web;
 
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Routing\Controller as BaseController;

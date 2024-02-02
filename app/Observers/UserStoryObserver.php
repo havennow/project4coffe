@@ -1,9 +1,9 @@
 <?php
 
-namespace GitScrum\Observers;
+namespace App\Observers;
 
-use GitScrum\Models\UserStory;
-use GitScrum\Classes\Helper;
+use App\Models\UserStory;
+use App\Classes\Helper;
 use Auth;
 
 class UserStoryObserver

@@ -1,10 +1,10 @@
 <?php
 
-namespace GitScrum\Models;
+namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use GitScrum\Scopes\GlobalScope;
-use GitScrum\Presenters\GlobalPresenter;
+use App\Scopes\GlobalScope;
+use App\Presenters\GlobalPresenter;
 
 class PullRequest extends Model
 {
@@ -44,7 +44,7 @@ class PullRequest extends Model
     public function commits()
     {
         return $this->belongsToMany(
-            \GitScrum\Models\Commit::class,
+            \App\Models\Commit::class,
             'pull_requests_has_commits',
             'pull_request_id',
             'commit_id'

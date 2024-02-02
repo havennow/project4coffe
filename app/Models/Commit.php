@@ -1,12 +1,12 @@
 <?php
 
-namespace GitScrum\Models;
+namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use GitScrum\Scopes\CommitScope;
-use GitScrum\Scopes\GlobalScope;
-use GitScrum\Presenters\GlobalPresenter;
-use GitScrum\Presenters\CommitPresenter;
+use App\Scopes\CommitScope;
+use App\Scopes\GlobalScope;
+use App\Presenters\GlobalPresenter;
+use App\Presenters\CommitPresenter;
 
 class Commit extends Model
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace GitScrum\Services;
+namespace App\Services;
 
-use GitScrum\Http\Requests\AttachmentRequest;
-use GitScrum\Models\Attachment;
+use App\Http\Requests\AttachmentRequest;
+use App\Models\Attachment;
 
 class AttachmentService
 {

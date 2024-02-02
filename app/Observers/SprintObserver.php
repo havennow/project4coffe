@@ -1,10 +1,10 @@
 <?php
 
-namespace GitScrum\Observers;
+namespace App\Observers;
 
-use GitScrum\Models\Sprint;
-use GitScrum\Models\ConfigStatus;
-use GitScrum\Classes\Helper;
+use App\Models\Sprint;
+use App\Models\ConfigStatus;
+use App\Classes\Helper;
 use Carbon\Carbon;
 use Auth;
 

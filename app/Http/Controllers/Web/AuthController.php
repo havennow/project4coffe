@@ -1,9 +1,8 @@
 <?php
 
-namespace GitScrum\Http\Controllers\Web;
+namespace App\Http\Controllers\Web;
 
-use GitScrum\Http\Requests\AuthRequest;
-use GitScrum\Models\User;
+use App\Models\User;
 use Socialite;
 use Auth;
 use SocialiteProviders\Manager\Exception\InvalidArgumentException;
@@ -44,10 +43,10 @@ class AuthController extends Controller
             // case 'gogs':  someday, maybe
             case 'gitea':
                return view('gitea.login');
-        
+
 
             default:
-                throw new InvalidArgumentException(trans('gitscrum.provider-was-not-set'));
+                throw new InvalidArgumentException(trans('App.provider-was-not-set'));
                 break;
         }
     }

@@ -1,13 +1,13 @@
 <?php
 
-namespace GitScrum\Models;
+namespace App\Models;
 
-use GitScrum\Presenters\SprintPresenter;
+use App\Presenters\SprintPresenter;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
-use GitScrum\Scopes\GlobalScope;
-use GitScrum\Scopes\SprintScope;
-use GitScrum\Presenters\GlobalPresenter;
+use App\Scopes\GlobalScope;
+use App\Scopes\SprintScope;
+use App\Presenters\GlobalPresenter;
 
 class Sprint extends Model
 {

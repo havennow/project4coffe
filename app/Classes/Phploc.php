@@ -1,6 +1,6 @@
 <?php
 
-namespace GitScrum\Classes;
+namespace App\Classes;
 
 class Phploc
 {

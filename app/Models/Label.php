@@ -1,10 +1,10 @@
 <?php
 
-namespace GitScrum\Models;
+namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use GitScrum\Scopes\GlobalScope;
-use GitScrum\Presenters\GlobalPresenter;
+use App\Scopes\GlobalScope;
+use App\Presenters\GlobalPresenter;
 
 class Label extends Model
 {

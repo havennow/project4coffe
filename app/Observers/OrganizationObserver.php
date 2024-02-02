@@ -1,8 +1,8 @@
 <?php
 
-namespace GitScrum\Observers;
+namespace App\Observers;
 
-use GitScrum\Models\Organization;
+use App\Models\Organization;
 use Auth;
 
 class OrganizationObserver

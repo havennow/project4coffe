@@ -1,8 +1,8 @@
 <?php
 
-namespace GitScrum\Observers;
+namespace App\Observers;
 
-use GitScrum\Models\Status;
+use App\Models\Status;
 use Auth;
 
 class StatusObserver

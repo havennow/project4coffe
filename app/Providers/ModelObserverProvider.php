@@ -1,32 +1,32 @@
 <?php
 
-namespace GitScrum\Providers;
+namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use GitScrum\Models\Attachment;
-use GitScrum\Models\Branch;
-use GitScrum\Models\Comment;
-use GitScrum\Models\Favorite;
-use GitScrum\Models\Issue;
-use GitScrum\Models\Label;
-use GitScrum\Models\Note;
-use GitScrum\Models\ProductBacklog;
-use GitScrum\Models\Sprint;
-use GitScrum\Models\Status;
-use GitScrum\Models\UserStory;
-use GitScrum\Models\Organization;
-use GitScrum\Observers\AttachmentObserver;
-use GitScrum\Observers\BranchObserver;
-use GitScrum\Observers\CommentObserver;
-use GitScrum\Observers\FavoriteObserver;
-use GitScrum\Observers\IssueObserver;
-use GitScrum\Observers\LabelObserver;
-use GitScrum\Observers\NoteObserver;
-use GitScrum\Observers\ProductBacklogObserver;
-use GitScrum\Observers\SprintObserver;
-use GitScrum\Observers\StatusObserver;
-use GitScrum\Observers\UserStoryObserver;
-use GitScrum\Observers\OrganizationObserver;
+use App\Models\Attachment;
+use App\Models\Branch;
+use App\Models\Comment;
+use App\Models\Favorite;
+use App\Models\Issue;
+use App\Models\Label;
+use App\Models\Note;
+use App\Models\ProductBacklog;
+use App\Models\Sprint;
+use App\Models\Status;
+use App\Models\UserStory;
+use App\Models\Organization;
+use App\Observers\AttachmentObserver;
+use App\Observers\BranchObserver;
+use App\Observers\CommentObserver;
+use App\Observers\FavoriteObserver;
+use App\Observers\IssueObserver;
+use App\Observers\LabelObserver;
+use App\Observers\NoteObserver;
+use App\Observers\ProductBacklogObserver;
+use App\Observers\SprintObserver;
+use App\Observers\StatusObserver;
+use App\Observers\UserStoryObserver;
+use App\Observers\OrganizationObserver;
 
 class ModelObserverProvider extends ServiceProvider
 {

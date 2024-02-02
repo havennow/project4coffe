@@ -1,11 +1,11 @@
 <?php
 
-namespace GitScrum\Services;
+namespace App\Services;
 
 use Carbon\Carbon;
-use GitScrum\Http\Requests\IssueRequest;
-use GitScrum\Models\ConfigStatus;
-use GitScrum\Models\Issue;
+use App\Http\Requests\IssueRequest;
+use App\Models\ConfigStatus;
+use App\Models\Issue;
 use Auth;
 
 class IssueService extends Service

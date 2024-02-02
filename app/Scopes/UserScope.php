@@ -1,9 +1,9 @@
 <?php
 
-namespace GitScrum\Scopes;
+namespace App\Scopes;
 
-use GitScrum\Models\Sprint;
-use GitScrum\Models\UserStory;
+use App\Models\Sprint;
+use App\Models\UserStory;
 
 trait UserScope
 {

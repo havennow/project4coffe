@@ -1,6 +1,6 @@
 <?php
 
-namespace GitScrum\Transformers;
+namespace App\Transformers;
 
 use League\Fractal\TransformerAbstract;
 

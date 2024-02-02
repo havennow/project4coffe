@@ -1,10 +1,10 @@
 <?php
 
-namespace GitScrum\Services;
+namespace App\Services;
 
 use Config;
-use GitScrum\Http\Requests\LabelRequest;
-use GitScrum\Models\Label;
+use App\Http\Requests\LabelRequest;
+use App\Models\Label;
 
 class LabelService extends Service
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace GitScrum\Observers;
+namespace App\Observers;
 
-use GitScrum\Models\ProductBacklog;
-use GitScrum\Models\Organization;
-use GitScrum\Classes\Helper;
+use App\Models\ProductBacklog;
+use App\Models\Organization;
+use App\Classes\Helper;
 use Auth;
 
 class ProductBacklogObserver

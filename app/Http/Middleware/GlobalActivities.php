@@ -1,9 +1,9 @@
 <?php
 
-namespace GitScrum\Http\Middleware;
+namespace App\Http\Middleware;
 
 use Closure;
-use GitScrum\Models\Sprint;
+use App\Models\Sprint;
 
 class GlobalActivities
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace GitScrum\Scopes;
+namespace App\Scopes;
 
-use GitScrum\Models\ConfigStatus;
+use App\Models\ConfigStatus;
 use Carbon;
 
 trait SprintScope

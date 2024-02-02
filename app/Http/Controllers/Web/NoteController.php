@@ -1,10 +1,10 @@
 <?php
 
-namespace GitScrum\Http\Controllers\Web;
+namespace App\Http\Controllers\Web;
 
 use Illuminate\Http\Request;
-use GitScrum\Http\Requests\NoteRequest;
-use GitScrum\Models\Note;
+use App\Http\Requests\NoteRequest;
+use App\Models\Note;
 use Carbon\Carbon;
 use Auth;
 
@@ -22,7 +22,7 @@ class NoteController extends Controller
         $request->request->add([
             'slug' => $slug
         ]);
-        
+
         resolve('NoteService')->update($request);
 
         return back()->with('success', trans('gitscrum.updated-successfully'));

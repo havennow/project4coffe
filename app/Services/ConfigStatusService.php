@@ -1,9 +1,9 @@
 <?php
 
-namespace GitScrum\Services;
+namespace App\Services;
 
 use Illuminate\Http\Request;
-use GitScrum\Models\ConfigStatus;
+use App\Models\ConfigStatus;
 
 class ConfigStatusService
 {

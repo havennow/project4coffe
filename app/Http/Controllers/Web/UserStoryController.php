@@ -1,13 +1,13 @@
 <?php
 
-namespace GitScrum\Http\Controllers\Web;
+namespace App\Http\Controllers\Web;
 
 use Illuminate\Http\Request;
-use GitScrum\Http\Requests\UserStoryRequest;
-use GitScrum\Models\UserStory;
-use GitScrum\Models\ConfigPriority;
-use GitScrum\Models\ProductBacklog;
-use GitScrum\Classes\Helper;
+use App\Http\Requests\UserStoryRequest;
+use App\Models\UserStory;
+use App\Models\ConfigPriority;
+use App\Models\ProductBacklog;
+use App\Classes\Helper;
 use Auth;
 
 class UserStoryController extends Controller
@@ -51,7 +51,7 @@ class UserStoryController extends Controller
         $userStory = UserStory::slug($slug)
             ->with('labels')
             ->first();
-            
+
         return view('user_stories.show')
             ->with('userStory', $userStory);
     }

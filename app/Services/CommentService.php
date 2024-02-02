@@ -1,9 +1,9 @@
 <?php
 
-namespace GitScrum\Services;
+namespace App\Services;
 
-use GitScrum\Http\Requests\CommentRequest;
-use GitScrum\Models\Comment;
+use App\Http\Requests\CommentRequest;
+use App\Models\Comment;
 
 class CommentService
 {

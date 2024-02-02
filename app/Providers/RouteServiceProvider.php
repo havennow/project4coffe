@@ -1,25 +1,31 @@
 <?php
 
-namespace GitScrum\Providers;
+namespace App\Providers;
 
-use Illuminate\Support\Facades\Route;
+use Illuminate\Cache\RateLimiting\Limit;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\RateLimiter;
+use Illuminate\Support\Facades\Route;
 
 class RouteServiceProvider extends ServiceProvider
 {
+
+    protected $namespace = 'App\Http\Controllers';
+
     /**
-     * This namespace is applied to your controller routes.
+     * The path to your application's "home" route.
      *
-     * In addition, it is set as the URL generator's root namespace.
+     * Typically, users are redirected here after authentication.
      *
      * @var string
      */
-    protected $namespace = 'GitScrum\Http\Controllers';
+    public const HOME = '/home';
 
     /**
-     * Define your route model bindings, pattern filters, etc.
+     * Define your route model bindings, pattern filters, and other route configuration.
      */
-    public function boot()
+    public function boot(): void
     {
         parent::boot();
     }
@@ -39,12 +45,12 @@ class RouteServiceProvider extends ServiceProvider
      *
      * These routes all receive session state, CSRF protection, etc.
      */
-    protected function mapWebRoutes()
+    protected function mapWebRoutes(): void
     {
         Route::group([
             'middleware' => 'web',
             'namespace' => $this->namespace,
-        ], function ($router) {
+        ], static function ($router) {
             require base_path('routes/web.php');
         });
     }
@@ -54,13 +60,13 @@ class RouteServiceProvider extends ServiceProvider
      *
      * These routes are typically stateless.
      */
-    protected function mapApiRoutes()
+    protected function mapApiRoutes(): void
     {
         Route::group([
             'middleware' => 'api',
             'namespace' => $this->namespace,
             'prefix' => 'api',
-        ], function ($router) {
+        ], static function ($router) {
             require base_path('routes/api.php');
         });
     }

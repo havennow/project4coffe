@@ -1,9 +1,9 @@
 <?php
 
-namespace GitScrum\Presenters;
+namespace App\Presenters;
 
-use GitScrum\Classes\Parsedown;
-use GitScrum\Models\ConfigStatus;
+use App\Classes\Parsedown;
+use App\Models\ConfigStatus;
 
 trait IssuePresenter
 {

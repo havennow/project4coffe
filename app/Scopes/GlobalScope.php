@@ -1,6 +1,6 @@
 <?php
 
-namespace GitScrum\Scopes;
+namespace App\Scopes;
 
 use Auth;
 use Carbon;
@@ -24,7 +24,7 @@ trait GlobalScope
             $status = $this->issues->map(function ($issue) {
                 return $issue->status;
             })->groupBy('slug')->all();
-            
+
             return collect($status);
         }
     }

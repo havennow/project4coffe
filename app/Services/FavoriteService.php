@@ -1,8 +1,8 @@
 <?php
 
-namespace GitScrum\Services;
+namespace App\Services;
 
-use GitScrum\Models\Favorite;
+use App\Models\Favorite;
 
 class FavoriteService
 {

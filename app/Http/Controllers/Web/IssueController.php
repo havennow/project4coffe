@@ -1,17 +1,17 @@
 <?php
 
-namespace GitScrum\Http\Controllers\Web;
+namespace App\Http\Controllers\Web;
 
 use Illuminate\Http\Request;
-use GitScrum\Contracts\SlackInterface as Slack;
-use GitScrum\Http\Requests\IssueRequest;
-use GitScrum\Models\Sprint;
-use GitScrum\Models\Issue;
-use GitScrum\Models\Organization;
-use GitScrum\Models\ConfigStatus;
+use App\Contracts\SlackInterface as Slack;
+use App\Http\Requests\IssueRequest;
+use App\Models\Sprint;
+use App\Models\Issue;
+use App\Models\Organization;
+use App\Models\ConfigStatus;
 use Carbon\Carbon;
 use Auth;
-use GitScrum\Http\Responses\Issue\Store as IssueStoreResponse;
+use App\Http\Responses\Issue\Store as IssueStoreResponse;
 
 class IssueController extends Controller
 {
@@ -55,7 +55,7 @@ class IssueController extends Controller
 
     public function create($scope, $slug, $parent_id = null)
     {
-        $model = 'GitScrum\\Models\\'.$scope;
+        $model = 'App\\Models\\'.$scope;
 
         $obj = $model::slug($slug)->first();
         $organization = Organization::find($obj->productBacklog->organization_id);
@@ -132,7 +132,7 @@ class IssueController extends Controller
         }
 
         $request->slug = $slug;
-        
+
         resolve('IssueService')->setRequest($request)->updateStatus();
 
         $issue = Issue::slug($slug)->firstOrFail();

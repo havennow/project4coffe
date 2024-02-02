@@ -1,11 +1,11 @@
 <?php
 
-namespace GitScrum\Models;
+namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use GitScrum\Scopes\ConfigStatusScope;
-use GitScrum\Scopes\GlobalScope;
-use GitScrum\Presenters\GlobalPresenter;
+use App\Scopes\ConfigStatusScope;
+use App\Scopes\GlobalScope;
+use App\Presenters\GlobalPresenter;
 
 class ConfigStatus extends Model
 {
@@ -50,7 +50,7 @@ class ConfigStatus extends Model
 
     public function status()
     {
-        //return $this->hasOne(\GitScrum\Models\Status::class, 'id', 'id');
+        //return $this->hasOne(\App\Models\Status::class, 'id', 'id');
     }
 
     public function issue()

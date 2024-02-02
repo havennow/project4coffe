@@ -1,12 +1,12 @@
 <?php
 
-namespace GitScrum\Models;
+namespace App\Models;
 
-use GitScrum\Presenters\NotePresenter;
+use App\Presenters\NotePresenter;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
-use GitScrum\Scopes\GlobalScope;
-use GitScrum\Presenters\GlobalPresenter;
+use App\Scopes\GlobalScope;
+use App\Presenters\GlobalPresenter;
 
 class Note extends Model
 {

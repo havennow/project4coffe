@@ -1,13 +1,13 @@
 <?php
 
-namespace GitScrum\Models;
+namespace App\Models;
 
-use GitScrum\Presenters\UserPresenter;
+use App\Presenters\UserPresenter;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Database\Eloquent\Model;
-use GitScrum\Scopes\GlobalScope;
-use GitScrum\Scopes\UserScope;
-use GitScrum\Presenters\GlobalPresenter;
+use App\Scopes\GlobalScope;
+use App\Scopes\UserScope;
+use App\Presenters\GlobalPresenter;
 
 class User extends Authenticatable
 {

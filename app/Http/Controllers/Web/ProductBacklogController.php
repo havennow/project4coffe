@@ -1,10 +1,10 @@
 <?php
 
-namespace GitScrum\Http\Controllers\Web;
+namespace App\Http\Controllers\Web;
 
 use Illuminate\Http\Request;
-use GitScrum\Http\Requests\ProductBacklogRequest;
-use GitScrum\Models\ProductBacklog;
+use App\Http\Requests\ProductBacklogRequest;
+use App\Models\ProductBacklog;
 use Auth;
 
 class ProductBacklogController extends Controller

@@ -1,6 +1,6 @@
 <?php
 
-namespace GitScrum\Contracts;
+namespace App\Contracts;
 
 interface SlackInterface
 {

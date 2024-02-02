@@ -1,10 +1,10 @@
 <?php
 
-namespace GitScrum\Classes;
+namespace App\Classes;
 
 use Illuminate\Pagination\LengthAwarePaginator;
-use GitScrum\Models\IssueType;
-use GitScrum\Models\ConfigIssueEffort;
+use App\Models\IssueType;
+use App\Models\ConfigIssueEffort;
 use Auth;
 use Carbon;
 

@@ -1,8 +1,8 @@
 <?php
 
-namespace GitScrum\Observers;
+namespace App\Observers;
 
-use GitScrum\Models\Favorite;
+use App\Models\Favorite;
 use Auth;
 
 class FavoriteObserver

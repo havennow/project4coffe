@@ -1,8 +1,8 @@
 <?php
 
-namespace GitScrum\Http\Controllers\Web;
+namespace App\Http\Controllers\Web;
 
-use GitScrum\Models\ProductBacklog;
+use App\Models\ProductBacklog;
 use Illuminate\Http\Request;
 use Session;
 use Auth;

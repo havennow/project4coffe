@@ -1,9 +1,9 @@
 <?php
 
-namespace GitScrum\Observers;
+namespace App\Observers;
 
-use GitScrum\Models\Status;
-use GitScrum\Models\Comment;
+use App\Models\Status;
+use App\Models\Comment;
 use Auth;
 
 class CommentObserver

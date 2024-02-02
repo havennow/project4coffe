@@ -1,6 +1,6 @@
 <?php
 
-namespace GitScrum\Scopes;
+namespace App\Scopes;
 
 trait ConfigStatusScope
 {

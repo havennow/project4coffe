@@ -1,6 +1,6 @@
 <?php
 
-namespace GitScrum\Http\Controllers\Web;
+namespace App\Http\Controllers\Web;
 
 class FavoriteController extends Controller
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace GitScrum\Http\Responses\Issue;
+namespace App\Http\Responses\Issue;
 
-use GitScrum\Classes\Helper;
+use App\Classes\Helper;
 
 class Store
 {

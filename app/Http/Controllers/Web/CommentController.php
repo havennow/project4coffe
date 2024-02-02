@@ -1,9 +1,9 @@
 <?php
 
-namespace GitScrum\Http\Controllers\Web;
+namespace App\Http\Controllers\Web;
 
-use GitScrum\Http\Requests\CommentRequest;
-use GitScrum\Models\Comment;
+use App\Http\Requests\CommentRequest;
+use App\Models\Comment;
 
 class CommentController extends Controller
 {

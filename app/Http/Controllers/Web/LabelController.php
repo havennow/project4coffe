@@ -1,10 +1,10 @@
 <?php
 
-namespace GitScrum\Http\Controllers\Web;
+namespace App\Http\Controllers\Web;
 
 use Illuminate\Http\Request;
-use GitScrum\Http\Requests\LabelRequest;
-use GitScrum\Models\Label;
+use App\Http\Requests\LabelRequest;
+use App\Models\Label;
 
 class LabelController extends Controller
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace GitScrum\Classes;
+namespace App\Classes;
 
 use Storage;
-use GitScrum\CommitFile;
-use GitScrum\CommitFilePhpcs;
+use App\CommitFile;
+use App\CommitFilePhpcs;
 
 class Phpcs
 {

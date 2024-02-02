@@ -1,12 +1,12 @@
 <?php
 
-namespace GitScrum\Services;
+namespace App\Services;
 
 use Auth;
 use Illuminate\Http\Request;
 use Carbon\Carbon;
-use GitScrum\Http\Requests\NoteRequest;
-use GitScrum\Models\Note;
+use App\Http\Requests\NoteRequest;
+use App\Models\Note;
 
 class NoteService extends Service
 {

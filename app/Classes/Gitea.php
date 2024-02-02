@@ -1,15 +1,15 @@
 <?php
 
-namespace GitScrum\Classes;
+namespace App\Classes;
 
 use Auth;
 use Carbon;
-use GitScrum\Models\Branch;
-use GitScrum\Models\User;
-use GitScrum\Models\Issue;
-use GitScrum\Models\Organization;
-use GitScrum\Models\ProductBacklog;
-use GitScrum\Contracts\ProviderInterface;
+use App\Models\Branch;
+use App\Models\User;
+use App\Models\Issue;
+use App\Models\Organization;
+use App\Models\ProductBacklog;
+use App\Contracts\ProviderInterface;
 
 class Gitea implements ProviderInterface
 {
@@ -73,7 +73,7 @@ class Gitea implements ProviderInterface
 
         return json_decode($result);
     }
-    
+
     public function tplUser($obj)
     {
         return [
@@ -320,7 +320,7 @@ class Gitea implements ProviderInterface
         $response = self::request(
             env('GITEA_INSTANCE_URI').'api/v1/repos/'.
             $obj->issue->productBacklog->organization->username.DIRECTORY_SEPARATOR.(
-                $verb == 'POST' 
+                $verb == 'POST'
                 ?
                 $obj->issue->productBacklog->title.'/issues/'.($obj->issue->number).'/comments?token='.Auth::user()->token
                 :

@@ -1,6 +1,6 @@
 <?php
 
-namespace GitScrum\Presenters;
+namespace App\Presenters;
 
 trait CommitFilePresenter
 {

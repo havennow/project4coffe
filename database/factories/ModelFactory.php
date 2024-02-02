@@ -11,7 +11,7 @@
 |
 */
 
-$factory->define(\GitScrum\Models\User::class, function (Faker\Generator $faker) {
+$factory->define(\App\Models\User::class, function (Faker\Generator $faker) {
     return [
         'name' => $faker->name,
         'email' => $faker->unique()->safeEmail,
@@ -20,107 +20,107 @@ $factory->define(\GitScrum\Models\User::class, function (Faker\Generator $faker)
     ];
 });
 
-$factory->define(\GitScrum\Models\Attachment::class, function (Faker\Generator $faker) {
+$factory->define(\App\Models\Attachment::class, function (Faker\Generator $faker) {
     return [
     ];
 });
 
-$factory->define(\GitScrum\Models\Branch::class, function (Faker\Generator $faker) {
+$factory->define(\App\Models\Branch::class, function (Faker\Generator $faker) {
     return [
     ];
 });
 
-$factory->define(\GitScrum\Models\Comment::class, function (Faker\Generator $faker) {
+$factory->define(\App\Models\Comment::class, function (Faker\Generator $faker) {
     return [
     ];
 });
 
-$factory->define(\GitScrum\Models\Commit::class, function (Faker\Generator $faker) {
+$factory->define(\App\Models\Commit::class, function (Faker\Generator $faker) {
     return [
     ];
 });
 
-$factory->define(\GitScrum\Models\CommitFile::class, function (Faker\Generator $faker) {
+$factory->define(\App\Models\CommitFile::class, function (Faker\Generator $faker) {
     return [
     ];
 });
 
-$factory->define(\GitScrum\Models\CommitFilePhpc::class, function (Faker\Generator $faker) {
+$factory->define(\App\Models\CommitFilePhpc::class, function (Faker\Generator $faker) {
     return [
     ];
 });
 
-$factory->define(\GitScrum\Models\ConfigIssueEffort::class, function (Faker\Generator $faker) {
+$factory->define(\App\Models\ConfigIssueEffort::class, function (Faker\Generator $faker) {
     return [
     ];
 });
 
-$factory->define(\GitScrum\Models\ConfigPriority::class, function (Faker\Generator $faker) {
+$factory->define(\App\Models\ConfigPriority::class, function (Faker\Generator $faker) {
     return [
     ];
 });
 
-$factory->define(\GitScrum\Models\ConfigStatus::class, function (Faker\Generator $faker) {
+$factory->define(\App\Models\ConfigStatus::class, function (Faker\Generator $faker) {
     return [
     ];
 });
 
-$factory->define(\GitScrum\Models\Favorite::class, function (Faker\Generator $faker) {
+$factory->define(\App\Models\Favorite::class, function (Faker\Generator $faker) {
     return [
     ];
 });
 
-$factory->define(\GitScrum\Models\Issue::class, function (Faker\Generator $faker) {
+$factory->define(\App\Models\Issue::class, function (Faker\Generator $faker) {
     return [
     ];
 });
 
-$factory->define(\GitScrum\Models\IssueType::class, function (Faker\Generator $faker) {
+$factory->define(\App\Models\IssueType::class, function (Faker\Generator $faker) {
     return [
     ];
 });
 
-$factory->define(\GitScrum\Models\Label::class, function (Faker\Generator $faker) {
+$factory->define(\App\Models\Label::class, function (Faker\Generator $faker) {
     return [
     ];
 });
 
-$factory->define(\GitScrum\Models\Note::class, function (Faker\Generator $faker) {
+$factory->define(\App\Models\Note::class, function (Faker\Generator $faker) {
     return [
     ];
 });
 
-$factory->define(\GitScrum\Models\Organization::class, function (Faker\Generator $faker) {
+$factory->define(\App\Models\Organization::class, function (Faker\Generator $faker) {
     return [
     ];
 });
 
-$factory->define(\GitScrum\Models\ProductBacklog::class, function (Faker\Generator $faker) {
+$factory->define(\App\Models\ProductBacklog::class, function (Faker\Generator $faker) {
     return [
     ];
 });
 
-$factory->define(\GitScrum\Models\PullRequest::class, function (Faker\Generator $faker) {
+$factory->define(\App\Models\PullRequest::class, function (Faker\Generator $faker) {
     return [
     ];
 });
 
-$factory->define(\GitScrum\Models\Sprint::class, function (Faker\Generator $faker) {
+$factory->define(\App\Models\Sprint::class, function (Faker\Generator $faker) {
     return [
     ];
 });
 
-$factory->define(\GitScrum\Models\Status::class, function (Faker\Generator $faker) {
+$factory->define(\App\Models\Status::class, function (Faker\Generator $faker) {
     return [
     ];
 });
 
-$factory->define(\GitScrum\Models\UserStat::class, function (Faker\Generator $faker) {
+$factory->define(\App\Models\UserStat::class, function (Faker\Generator $faker) {
     return [
     ];
 });
 
-$factory->define(\GitScrum\Models\UserStory::class, function (Faker\Generator $faker) {
+$factory->define(\App\Models\UserStory::class, function (Faker\Generator $faker) {
     return [
     ];
 });

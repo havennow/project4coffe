@@ -1,12 +1,12 @@
 <?php
 
-namespace GitScrum\Models;
+namespace App\Models;
 
-use GitScrum\Presenters\GlobalPresenter;
+use App\Presenters\GlobalPresenter;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
-use GitScrum\Scopes\GlobalScope;
-use GitScrum\Scopes\UserStoryScope;
+use App\Scopes\GlobalScope;
+use App\Scopes\UserStoryScope;
 
 class UserStory extends Model
 {

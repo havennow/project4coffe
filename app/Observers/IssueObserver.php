@@ -1,13 +1,13 @@
 <?php
 
-namespace GitScrum\Observers;
+namespace App\Observers;
 
-use GitScrum\Models\Issue;
-use GitScrum\Models\UserStory;
-use GitScrum\Models\ConfigStatus;
-use GitScrum\Models\Sprint;
-use GitScrum\Models\Status;
-use GitScrum\Classes\Helper;
+use App\Models\Issue;
+use App\Models\UserStory;
+use App\Models\ConfigStatus;
+use App\Models\Sprint;
+use App\Models\Status;
+use App\Classes\Helper;
 use Auth;
 
 class IssueObserver

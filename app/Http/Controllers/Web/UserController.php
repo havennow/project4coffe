@@ -1,9 +1,9 @@
 <?php
 
-namespace GitScrum\Http\Controllers\Web;
+namespace App\Http\Controllers\Web;
 
 use Illuminate\Http\Request;
-use GitScrum\Models\User;
+use App\Models\User;
 use Auth;
 
 class UserController extends Controller

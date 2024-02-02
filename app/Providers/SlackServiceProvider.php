@@ -1,8 +1,10 @@
 <?php
 
-namespace GitScrum\Providers;
+namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use App\Contracts\SlackInterface;
+use App\Services\SlackService;
 
 class SlackServiceProvider extends ServiceProvider
 {
@@ -23,6 +25,6 @@ class SlackServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->bind('GitScrum\Contracts\SlackInterface', 'GitScrum\Services\SlackService');
+        $this->app->bind(SlackInterface::class, SlackService::class);
     }
 }

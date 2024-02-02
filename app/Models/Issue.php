@@ -1,13 +1,13 @@
 <?php
 
-namespace GitScrum\Models;
+namespace App\Models;
 
-use GitScrum\Presenters\GlobalPresenter;
-use GitScrum\Presenters\IssuePresenter;
+use App\Presenters\GlobalPresenter;
+use App\Presenters\IssuePresenter;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
-use GitScrum\Scopes\GlobalScope;
-use GitScrum\Scopes\IssueScope;
+use App\Scopes\GlobalScope;
+use App\Scopes\IssueScope;
 
 class Issue extends Model
 {

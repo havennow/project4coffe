@@ -1,6 +1,6 @@
 <?php
 
-namespace GitScrum\Services;
+namespace App\Services;
 
 abstract class Service
 {

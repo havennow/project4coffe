@@ -1,6 +1,6 @@
 <?php
 
-namespace GitScrum\Serializers;
+namespace App\Serializers;
 
 use League\Fractal\Serializer\ArraySerializer;
 

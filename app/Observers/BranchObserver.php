@@ -1,8 +1,8 @@
 <?php
 
-namespace GitScrum\Observers;
+namespace App\Observers;
 
-use GitScrum\Models\Branch;
+use App\Models\Branch;
 use Auth;
 
 class BranchObserver

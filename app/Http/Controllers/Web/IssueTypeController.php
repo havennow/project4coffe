@@ -1,8 +1,8 @@
 <?php
 
-namespace GitScrum\Http\Controllers\Web;
+namespace App\Http\Controllers\Web;
 
-use GitScrum\Models\Issue;
+use App\Models\Issue;
 
 class IssueTypeController extends Controller
 {
